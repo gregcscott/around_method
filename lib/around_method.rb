@@ -1,5 +1,6 @@
-require "around_method/version"
+require 'around_method/version'
+require 'around_method/core'
 
-module AroundMethod
-  # Your code goes here...
+class Object
+  extend AroundMethod::Core
 end
