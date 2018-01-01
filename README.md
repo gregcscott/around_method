@@ -1,8 +1,6 @@
 # AroundMethod
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/around_method`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+AroundMethod is a Ruby gem for method composition. This gem was inspired by ActionController filters, but brings the same pattern to any Ruby class.
 
 ## Installation
 
@@ -22,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+AroundMethod currently only supports wrapping _around_ methods. _Before_ and _after_ composition is planned for the future.
+
+#### Around
+
+```ruby
+class Class
+    around_method :wrapped, :wrapper
+
+    def wrapped
+      'cognito'
+    end
+
+    def wrapper
+      yield + ' ergo sum'
+    end
+end
+```
+
+Calling `wrapper` yields: `cognito ergo sum`
 
 ## Development
 
@@ -32,8 +48,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/around_method.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/scottish613/around_method.
 
 ## License
 
