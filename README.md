@@ -1,6 +1,8 @@
 # AroundMethod
 
-AroundMethod is a Ruby gem for method composition. This gem was inspired by ActionController filters, but brings the same pattern to any Ruby class.
+AroundMethod is a Ruby gem for method composition. This gem was inspired by ActionController filters, but brings the same pattern to any Ruby class. :cool:
+
+[![Build Status](https://travis-ci.org/scottish613/around_method.svg?branch=master)](https://travis-ci.org/scottish613/around_method)
 
 ## Installation
 
