@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-AroundMethod currently only supports wrapping _around_ methods. _Before_ and _after_ composition is planned for the future.
+AroundMethod is automatically available on all classes.
+
+Currently, AroundMethod only supports wrapping _around_ methods. _Before_ and _after_ composition is planned for the future.
 
 #### Around
 
@@ -38,7 +40,7 @@ class Class
 end
 ```
 
-Calling `wrapper` yields: `cognito ergo sum`
+Calling `wrapped` returns: `cognito ergo sum`
 
 ## Development
 
